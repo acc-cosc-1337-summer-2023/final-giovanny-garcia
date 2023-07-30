@@ -1,7 +1,9 @@
 //
 #include "die.h"
+#include <ctime>
 
 void Die::roll()
 {
- roll_value == rand() % 6 + 1; 
+    srand((unsigned int) time(NULL));
+    roll_value = (rand() % 6 + 1);
 }
