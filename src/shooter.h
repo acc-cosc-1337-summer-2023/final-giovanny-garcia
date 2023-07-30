@@ -1,20 +1,18 @@
-/*
-#include <vector>
 
 #ifndef SHOOTER
 #define SHOOTER
 
+#include <vector>
+#include "roll.h"
+
 class Shooter
 {
 public:
-    Roll* throw_die( two die reference parameters);
+    Roll* throw_die(Die& d1, Die& d2);
+    ~Shooter();
+    void clear();
 private:
-    vector<Roll*> rolls(Roll*);
+    std::vector<Roll*> rolls;
 };
 
-
-
-
-
 #endif
-*/
